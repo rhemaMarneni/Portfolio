@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+/* about page */
+
+.name {
+	font-size: 145px;
+	font-family: "Tahoma", sans-serif;
+}
+.lead {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+#featurelist {
+	list-style-type: none;
+	padding-left: 0%;
+}
+
+.view a {
+	text-decoration: none;
+}
+
+.btn-primary {
+	--bs-btn-bg: #242424;
+	--bs-btn-border-color: #000;
+	--bs-btn-hover-bg: #575757;
+	--bs-btn-hover-border-color: #2f2f2f;
+	--bs-btn-active-bg: #242424;
+	--bs-btn-active-border-color: #2f2f2f;
+	--bs-btn-disabled-bg: #242424;
+	--bs-btn-disabled-border-color: #242424;
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	font-size: 15px;
+}
+
+.github {
+	--bs-btn-bg: #294e19;
+	--bs-btn-border-color: #294e19;
+	--bs-btn-hover-bg: #46842b;
+	--bs-btn-hover-border-color: none;
+	--bs-btn-active-bg: #294e19;
+	--bs-btn-active-border-color: #46842b;
+	--bs-btn-disabled-bg: #294e19;
+	--bs-btn-disabled-border-color: #294e19;
+}
+
+.linkedin {
+	--bs-btn-bg: #0077b5;
+	--bs-btn-border-color: #0077b5;
+	--bs-btn-hover-bg: #2484b7;
+	--bs-btn-hover-border-color: none;
+	--bs-btn-active-bg: #0077b5;
+	--bs-btn-active-border-color: #2484b7;
+	--bs-btn-disabled-bg: #0077b5;
+	--bs-btn-disabled-border-color: ##0077b5;
+}
+/* skills page */
+
+#skills {
+	display: flex;
+	height: 100vh;
+}
+
+.toolkit {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 60px 1fr;
+	grid-template-rows: 1.5fr 1fr;
+	margin: 0;
+	padding: 0;
+}
+
+.sideheading1,
+.sideheading2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sideheading2 {
+	background-color: #7d7d7d;
+}
+
+h3 {
+	transform: rotate(270deg);
+	letter-spacing: 2px;
+	font-family: "Roboto Mono", monospace;
+	font-weight: bold;
+}
+
+.rows {
+	display: grid;
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-size: 24px;
+}
+
+.skillrow {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.skill {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex: 1;
+}
+
+.skill p {
+	margin-bottom: 0;
+	font-weight: bold;
+	color: #242424;
+}
+
+.python {
+	background-color: #5cadad;
+}
+
+.html,
+.jsp {
+	background-color: #019d9d;
+}
+
+.css {
+	background-color: #508a8a;
+}
+
+.js {
+	background-color: #339999;
+}
+
+.clang {
+	background-color: #028787;
+}
+
+.rlang,
+.java {
+	background-color: #008080;
+}
+
+.mysql {
+	background-color: #7dbdbd;
+}
+
+.toolrow {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.tool {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex: 1;
+	color: rgb(207, 207, 207);
+}
+
+.tool p {
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+.workbench {
+	background-color: #4e094e;
+}
+
+.vscode {
+	background-color: #6c2f6c;
+}
+
+.eclipse {
+	background-color: #944d94;
+}
+
+.figma {
+	background-color: #c77fc7;
+}
+
+.canva {
+	background-color: #8a0a8a;
+}
+
+.gephi {
+	background-color: #590959;
+}
+
+/* contact page */
+#contact {
+	display: flex;
+	height: 50%;
+}
+
+#contact h1 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.contact-text {
+	font-family: Tahoma, "Trebuchet MS", sans-serif;
+	font-size: x-large;
+}
+
+/* responsive */
+/* small laptops and tablets */
+@media only screen and (max-width: 992px) {
+	.name {
+		font-size: 120px;
+	}
+}
+
+/* phones */
+@media only screen and (max-width: 600px) {
+	.name {
+		font-size: 80px;
+	}
+
+	.lead {
+		font-size: 16px;
+	}
+
+	.view {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.rows {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.name {
+		font-size: 60px;
+		text-align: center;
+	}
+
+	#featurelist {
+		text-align: center;
+	}
+
+	#about > div > div.col-10.col-sm-8.col-lg-6.mt-0 > img {
+		display: block;
+		margin-left: 11.5%;
+	}
+}
