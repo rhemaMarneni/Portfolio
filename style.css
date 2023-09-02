@@ -58,6 +58,18 @@
 	--bs-btn-disabled-bg: #0077b5;
 	--bs-btn-disabled-border-color: ##0077b5;
 }
+
+.codepen {
+	--bs-btn-bg: #4a4a4a;
+	--bs-btn-border-color: #4a4a4a;
+	--bs-btn-hover-bg: #7c7c7c;
+	--bs-btn-hover-border-color: none;
+	--bs-btn-active-bg: #4a4a4a;
+	--bs-btn-active-border-color: #4a4a4a;
+	--bs-btn-disabled-bg: #4a4a4a;
+	--bs-btn-disabled-border-color: #4a4a4a;
+}
+
 /* skills page */
 
 #skills {
@@ -85,7 +97,7 @@
 	background-color: #7d7d7d;
 }
 
-h3 {
+.skill-heading {
 	transform: rotate(270deg);
 	letter-spacing: 2px;
 	font-family: "Roboto Mono", monospace;
@@ -188,6 +200,14 @@ h3 {
 
 .gephi {
 	background-color: #590959;
+}
+
+/* projects page*/
+.projects-heading {
+	letter-spacing: 2px;
+	font-family: "Roboto Mono", monospace;
+	font-weight: bold;
+	text-align: center;
 }
 
 /* contact page */
