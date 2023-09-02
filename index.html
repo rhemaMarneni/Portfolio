@@ -37,7 +37,7 @@
 					</h1>
 					<p class="lead">
 						<ul id="featurelist" class="lead p-2">
-							<li>Frontend Web Developer</li>
+							<li>Software Developer</li>
 							<li>MSc Computer Science Student</li>
 							<li>Rutgers University</li>
 						</ul>
@@ -46,7 +46,7 @@
 						<a href="#skills"><button type="button" class="btn btn-primary btn-lg px-3 me-md-2">
 							Skills
 						</button></a>
-						<a href="#"><button type="button" class="btn btn-primary btn-lg px-3 me-md-2">
+						<a href="#projects"><button type="button" class="btn btn-primary btn-lg px-3 me-md-2">
 							Projects
 						</button></a>
 						
@@ -64,6 +64,10 @@
 						<a href="https://www.linkedin.com/in/rhema-km/"><button type="button" class="btn btn-primary btn-lg px-3 me-md-2 linkedin">
 							<i class="fab fa-linkedin"></i> LinkedIn
 						</button></a>
+						<a href="https://codepen.io/rivendell/pens/public"><button type="button" class="btn btn-primary btn-lg px-3 me-md-2 codepen">
+							<i class="fab fa-codepen"></i> CodePen
+						</button></a>
+						
 					</div>
 				</div>
 			</div>
@@ -72,7 +76,7 @@
 		<div class="col-xxl-8 px-0 py-0 bg-body-secondary" id="skills">
 			<div class="container-fluid toolkit">
 				<div class="sideheading1">
-					<h3>SKILLSET</h3>
+					<h3 class="skill-heading">SKILLSET</h3>
 				</div>
 				<div class="rows skillrow">
 					<div class="python skill"><i class="fab fa-python"></i>&nbsp;<p>PYTHON</p></div>
@@ -86,7 +90,7 @@
 					<div class="mysql skill"><i class="fa fa-database"></i>&nbsp;<p>MySQL</p></div>
 				</div>
 				<div class="sideheading2">
-					<h3>TOOLS</h3>
+					<h3 class="skill-heading">TOOLS</h3>
 				</div>
 				<div class="rows toolrow">
 					<div class="workbench tool"><p>MySQL WORKBENCH</p></div>
@@ -98,6 +102,98 @@
 				</div>		
 			</div>
 		</div>
+<!-- PROJECTS -->
+<div class="album py-5 bg-body-tertiary" id="projects">
+	<div class="container">
+<h1 class="projects-heading py-2">PROJECTS</h1>
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+			<div class="col"> <!--ElectriXchange-->
+				<div class="card shadow-sm">
+					<img src="./Images/electrixchange.jpg" alt="electrixchange" height="180px" style="border-radius: 5px;">
+					<!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="./Images/umalloc.jpg" role="img" aria-label="Placeholder: electrixchange" preserveAspectRatio="xMidYMid slice" focusable="false"><title>electrixchange</title>
+						</svg> -->
+					<div class="card-body">
+						<p class="card-text"><strong>ElectriXchange</strong><br> <em>HTML | CSS | JSP | JDBC | MySQL</em><br>An online e-commerce auction site for three categories of electronics items. Includes manual and auto-bidding over the listed items. Covers three user bases: Admin, Customer Representatives, End-users.</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<a href="https://github.com/rhemaMarneni/ElectriXchange-Online-Auction-Website"><button type="button" class="btn btn-sm btn-outline-secondary">View Project</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col"> <!--UThreads-->
+				<div class="card shadow-sm">
+					<img src="./Images/uthread.jpg" alt="uthreads" class="py-3" height="180px">
+					<div class="card-body">
+						<p class="card-text"><strong>UThreads: User-defined Thread Library</strong><br> <em>C</em><br>Created user-defined thread library for creating, yielding, joining, destroying, locking, and unlocking threads. Scheduled the threads using 3 scheduling algorithms: Round Robin, Pre-emptive SJF, Multilevel Feedback Queues.</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<a href="https://github.com/rhemaMarneni/UThreads-User-defined-Thread-Library-in-C"><button type="button" class="btn btn-sm btn-outline-secondary">View Project</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col"> <!--UMalloc-->
+				<div class="card shadow-sm">
+					<img src="./Images/umalloc.jpg" alt="umalloc" class="py-4" height="177px">
+					<div class="card-body">
+						<p class="card-text"><strong>UMalloc: User-defined Memory Allocation</strong><br> <em>C</em><br>Created user-defined library implement user-defined functions for <span style="font-family: 'Lucida Console', Courier, monospace; font-size: 13px;">malloc()</span> and <span style="font-family: 'Lucida Console', Courier, monospace; font-size: 13px;">free(),</span> for dynamic memory allocation. Memory is allocated using First Fit memory allocation and Segmentation policies.</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<a href="https://github.com/rhemaMarneni/UMalloc-User-defined-malloc-implementation-in-C"><button type="button" class="btn btn-sm btn-outline-secondary">View Project</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col"> <!--Optimization-->
+				<div class="card shadow-sm">
+					<img src="./Images/optimization.jpg" alt="optimization" class="py-3" height="168px" style="border-radius: 5px;">
+					<div class="card-body">
+						<p class="card-text"><strong>Momentum Methods and Descent Directions</strong><br> <em>Python (numpy, matplotlib, math)</em><br>A study on optimization techniques of Gradient Descent with Momentum for a convex function F(x) = 1/2 x^T Q x − x^T c
+							(where x and c are real vectors of dimension D, and Q is a real symmetric D x D matrix)</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<a href="https://github.com/rhemaMarneni/Optimization-Momentum-Methods-and-Descent-Directions"><button type="button" class="btn btn-sm btn-outline-secondary">View Project</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col"> <!--OSN Mood tracking-->
+				<div class="card shadow-sm">
+					<img src="./Images/moodtracker.jpg" alt="moodtracker" style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+					<div class="card-body">
+						<p class="card-text"><strong>Social Media Mood Tracking System</strong><br> <em>Figma</em><br>Understanding the Psychological Influence of Social Media and the research Gap in Mood Tracking Systems to propose a Mood Tracking System, based on past research on some of the negative impacts of social
+							media usage and the efficiency of current mood trackers.
+							</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<a href="https://www.figma.com/proto/tLoN3Ru9A0NROmoMM9W8o6/SM-Mood-Tracker-Prototype?node-id=2-2&starting-point-node-id=13%3A1388&scaling=scale-down"><button type="button" class="btn btn-sm btn-outline-secondary">View Project</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col"> <!--Lucky 7-->
+				<div class="card shadow-sm">
+					<img src="./Images/lucky7.jpg" alt="lucky7" height="165px" style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+					<div class="card-body">
+						<p class="card-text"><strong>Lucky 7 Dice Game</strong><br> <em>HTML | CSS | JS</em><br> A take on the Lucky 7 Dice game. Make bets, view dice rolls, and see the current balance update in real-time. Enjoy the thrill of making predictions and managing virtual coin balance while trying to extend your gameplay. It's a fun way to test your luck and prediction skills.
+							</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group">
+								<a href="https://rhemamarneni.github.io/Lucky7-Dice-Game/"><button type="button" class="btn btn-sm btn-outline-secondary">View Project</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- CONTACT -->
 		<div class="col-xxl-8 px-4 py-0 bg-black" id="contact">
 				<div class="container">
