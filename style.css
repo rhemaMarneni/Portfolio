@@ -5,11 +5,12 @@
 	box-sizing: border-box;
 }
 
-/* about page */ 
+/* about page */
 
 .name {
 	font-size: 145px;
 	font-family: "Tahoma", sans-serif;
+	z-index: 2;
 }
 .lead {
 	font-family: Georgia, Times, "Times New Roman", serif;
@@ -59,7 +60,7 @@
 	--bs-btn-disabled-border-color: ##0077b5;
 }
 
-.codepen { 
+.codepen {
 	--bs-btn-bg: #4a4a4a;
 	--bs-btn-border-color: #4a4a4a;
 	--bs-btn-hover-bg: #7c7c7c;
@@ -203,11 +204,33 @@
 }
 
 /* projects page*/
+.card {
+	height: 455px;
+}
+
+.card-text {
+	font-size: 15px;
+}
+
 .projects-heading {
 	letter-spacing: 2px;
 	font-family: "Roboto Mono", monospace;
 	font-weight: bold;
 	text-align: center;
+}
+
+.viewproject {
+	--bs-btn-bg: #f2fdff;
+	--bs-btn-border-color: #267290;
+	--bs-btn-hover-bg: #2484b7;
+	--bs-btn-hover-border-color: none;
+	--bs-btn-active-bg: #267290;
+	--bs-btn-active-border-color: #2484b7;
+	--bs-btn-disabled-bg: #267290;
+	--bs-btn-disabled-border-color: #267290;
+	--bs-btn-color: #267290;
+	color: var(--bs-btn-color);
+	--bs-btn-font-weight: 600;
 }
 
 /* contact page */
@@ -230,6 +253,14 @@
 @media only screen and (max-width: 992px) {
 	.name {
 		font-size: 120px;
+	}
+
+	.card {
+		height: 420px;
+	}
+
+	.card-text {
+		font-size: 12px;
 	}
 }
 
