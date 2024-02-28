@@ -234,6 +234,7 @@
 }
 
 /* contact page */
+
 #contact {
 	display: flex;
 	height: 50%;
@@ -245,7 +246,7 @@
 
 .contact-text {
 	font-family: Tahoma, "Trebuchet MS", sans-serif;
-	font-size: x-large;
+	font-size: large;
 }
 
 /* responsive */
