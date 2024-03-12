@@ -247,7 +247,18 @@
 .contact-text {
 	font-family: Tahoma, "Trebuchet MS", sans-serif;
 	font-size: large;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
 }
+
+.right{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 5px;
+}
+
 
 /* responsive */
 /* small laptops and tablets */
@@ -288,6 +299,19 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		font-size: 18px;
+	}
+
+	.contact-text{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.contact-text .left h1{
+		text-align: center;
+	}
+
+	.contact-text .left p{
+		text-align: justify;
 	}
 }
 
