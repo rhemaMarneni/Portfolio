@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 
 * {
 	box-sizing: border-box;
@@ -8,10 +9,73 @@
 
 /* about page */
 
+#about{
+	display: flex;
+	justify-content: center;
+}
+
+.about-page{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	background-color: #fff;
+	padding: 10px;
+	width: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	border-radius: 3px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+	transition: width 0.6s linear;
+	position: fixed;
+	z-index: 99;
+  }
+  
+  nav.active {
+	width: 100%;
+  }
+  
+  nav ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+	padding: 5px;
+	margin: 0;
+	width: 0; /*width 0 before transition -- that is not active*/
+	transition: width 0.6s linear;
+  }
+  
+  nav.active ul {
+	width: 100%;
+  }
+  
+  nav ul a {
+	position: relative;
+	font-weight: 400;
+	font-size: 18px;
+	font-family: "Bricolage Grotesque", sans-serif;
+	color: #000;
+	text-decoration: none;
+	margin: 0 10px;
+  }
+
+nav ul a:hover,
+nav ul a:active
+{
+	color: #7d205b;
+	text-decoration: underline;
+}
+
 .name {
-	font-size: 100px;
+	font-size: 60px;
 	font-family: "Tahoma", sans-serif;
 	z-index: 2;
+	text-align: center;
 }
 .lead {
 	font-size: 18px;
@@ -373,7 +437,7 @@
 /* small laptops and tablets */
 @media only screen and (max-width: 992px) {
 	.name {
-		font-size: 120px;
+		font-size: 60px;
 	}
 
 	.card {
@@ -392,8 +456,17 @@
 
 /* phones */
 @media only screen and (max-width: 600px) {
+	nav ul{
+		justify-content: center;
+		padding: 0;
+	}
+
+	nav ul a{
+		font-size: 12px;
+	}
+
 	.name {
-		font-size: 80px;
+		font-size: 60px;
 		text-align: center;
 	}
 
@@ -410,11 +483,19 @@
 		flex-wrap: wrap;
 	}
 
+	.page-links{
+		display: none;
+	}
+
 	.rows {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		font-size: 18px;
+	}
+
+	.highlight-text{
+		display: none;
 	}
 
 	.contact-text{
@@ -433,11 +514,15 @@
 
 @media only screen and (max-width: 500px) {
 	.name {
-		font-size: 60px;
+		font-size: 50px;
 		text-align: center;
 	}
 
 	.lead{
+		display: none;
+	}
+
+	.page-links{
 		display: none;
 	}
 
