@@ -10,63 +10,74 @@
 		crossorigin="anonymous" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css" />
 	<link rel="shortcut icon" href="navlogo.jpg" type="image/x-icon" />
 </head>
 
 <body>
-	<div class="container-fluid col-xxl-12" id="about">
-		<div class="row flex-lg-row-reverse align-items-center gy-4 gx-0 px-4 pt-2">
-			<div class="col-10 col-sm-8 col-lg-6 mt-0" style="z-index: 0;">
-				<img src="My project2.png" class="d-block mx-lg-auto img-fluid" alt="Rhema" width="650"
-					height="450" loading="lazy" style="z-index: 1;" />
-			</div>
-			<div class="col-lg-6 heading" style="z-index: 9;">
-				<!-- <ul id="featurelist" class="lead p-2">
-					<li>Software Developer</li>
-					<li>MSc Computer Science Student</li>
-					<li>Rutgers University</li>
-				</ul> -->
-				<h1 class="fw-bold text-body-emphasis lh-1 mb-3 name">
-					Rhema Marneni
-				</h1>
-				<div class="gap-2 d-md-flex justify-content-md-start p-2 view">
-					<a href="https://github.com/rhemamarneni">
-						<button type="button" class="btn btn-primary btn-lg px-3 me-md-2 github">
-							<i class="fab fa-github"></i> Github
-						</button>
-					</a>
-					<a href="https://www.linkedin.com/in/rhema-km/"><button type="button"
-							class="btn btn-primary btn-lg px-3 me-md-2 linkedin">
-							<i class="fab fa-linkedin"></i> LinkedIn
-						</button></a>
-					<a href="https://codepen.io/rivendell/pens/public"><button type="button"
-							class="btn btn-primary btn-lg px-3 me-md-2 codepen">
-							<i class="fab fa-codepen"></i> CodePen
-						</button></a>
+	<div class="col-xxl-12 container-fluid" id="about">
+		<nav class="active" id="nav">
+			<ul>
+			  <li><a href="#about">ABOUT</a></li>
+			  <li><a href="#skills">SKILLS</a></li>
+			  <li><a href="#projects">PROJECTS</a></li>
+			  <li><a href="#contact">CONTACT</a></li>
+			</ul>
+		  </nav>
+		<div class="about-page">
+			<div class="row flex-lg-row align-items-center gy-4 gx-0 px-4 pt-2">
+				<div class="col-10 col-sm-8 col-lg-6 mt-0" style="z-index: 0;">
+					<!-- photo -->
+					<img src="My project2.png" class="d-block mx-lg-auto img-fluid" alt="Rhema" width="350"
+						height="50" loading="lazy" style="z-index: 1;" />
+					<!-- name -->
+					<h1 class="fw-bold text-body-emphasis lh-1 m-3 name">
+						Rhema Marneni
+					</h1>
+					<!-- SM links -->
+					<div class="gap-2 d-md-flex justify-content-md-center p-2 view">
+						<a href="https://github.com/rhemamarneni" target="_blank" rel="noopener noreferrer">
+							<button type="button" class="btn btn-primary btn-lg px-3 me-md-2 github">
+								<i class="fab fa-github"></i> Github
+							</button>
+						</a>
+						<a href="https://www.linkedin.com/in/rhema-km/" target="_blank" rel="noopener noreferrer"><button type="button"
+								class="btn btn-primary btn-lg px-3 me-md-2 linkedin">
+								<i class="fab fa-linkedin"></i> LinkedIn
+							</button></a>
+						<a href="https://codepen.io/rivendell/pens/public" target="_blank" rel="noopener noreferrer"><button type="button"
+								class="btn btn-primary btn-lg px-3 me-md-2 codepen">
+								<i class="fab fa-codepen"></i> CodePen
+							</button></a>
+					</div>
 				</div>
-				<p class="lead my-3">
-					As an <span class="pop-words">adaptable</span> Software Developer, I have a proven track record of innovating user-friendly platforms and engineering robust REST APIs. 
-					My experience spans diverse projects, including the creation of news websites, blog platforms, and e-commerce sites, 
-					where I've leveraged HTTP requests and rigorously performed unit testing using Jasmine.<br><br>
-
-					In addition to my expertise in <span class="pop-words">Python and JavaScript</span>, and frameworks like Express and NodeJS, 
-					I bring my strong foundation in Data Structures and Object-Oriented Programming that enable me to <span class="pop-words">excel in an agile environment</span>.<br><br>
-
-					If you hire me as a Software Developer, I assure you that I will <span class="pop-words">quickly integrate into your team</span>, bringing with me <span class="pop-words">strong communication and interpersonal skills</span>. I am dedicated to my work and ensure that my skills are kept up to date within this rapidly changing industry.
-				</p>
-				<div class="gap-2 d-md-flex justify-content-md-start p-2 mb-3 view">
-					<a href="#skills"><button type="button" class="btn btn-primary btn-lg px-3 me-md-2">
-							Skills
-						</button></a>
-					<a href="#projects"><button type="button" class="btn btn-primary btn-lg px-3 me-md-2">
-							Projects
-						</button></a>
-
-					<a href="#contact"><button type="button" class="btn btn-primary btn-lg px-3 me-md-2">
-							Reach Me
-						</button></a>
-
+				<div class="col-lg-6 heading" style="z-index: 9;">
+					<!--Intro-->
+					<p class="lead my-3"> 
+						As an <span class="pop-words">adaptable</span> Software Developer, I have a proven track record of innovating user-friendly platforms and engineering robust REST APIs. 
+						My experience spans diverse projects, including the creation of news websites, blog platforms, and e-commerce sites, 
+						including unit testing using Jasmine.<br><br>
+	
+						In addition to my expertise in <span class="pop-words">Python and JavaScript</span>, and frameworks like Express and NodeJS, 
+						I bring my strong foundation in Data Structures and Object-Oriented Programming that enable me to <span class="pop-words">excel in an agile environment</span>.<br><br>
+	
+						If you hire me as a Software Developer, I assure you that I will <span class="pop-words">quickly integrate into your team</span>, bringing with me <span class="pop-words">strong communication and interpersonal skills</span>. I am dedicated to my work and ensure that my skills are kept up to date within this rapidly changing industry.
+					</p>
+					<!-- page links -->
+					<!-- <div class="gap-2 d-md-flex justify-content-md-start p-2 mb-3 view page-links">
+						<a href="#skills"><button type="button" class="btn btn-primary btn-lg px-3 me-md-2">
+								Skills
+							</button></a>
+						<a href="#projects"><button type="button" class="btn btn-primary btn-lg px-3 me-md-2">
+								Projects
+							</button></a>
+	
+						<a href="#contact"><button type="button" class="btn btn-primary btn-lg px-3 me-md-2">
+								Reach Me
+							</button></a>
+	
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -126,8 +137,108 @@
 	<div class="album py-5 bg-body-tertiary" id="projects">
 		<div class="container">
 			<h1 class="projects-heading py-2">PROJECTS</h1>
-			<h3>Massive Data Storage and Retrieval</h3>
-			<h4 class="highlight-title">🥇 Career highlight</h4>
+			<h3 class="py-3">Full Stack Development and UI/UX</h3>
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 project-boxes">
+				<div class="col"> <!--Galactic Journal-->
+					<div class="card shadow-sm">
+						<img src="./Images/Galactic Journal.png" alt="galaticjournal" height="180px"
+							style="border-radius: 5px;">
+						<div class="card-body">
+							<p class="card-text"><strong>Galactic Journal: Online Blog Application</strong><br> <em>NodeJS | Express | PostgreSQL | HTML/SCSS</em><br>
+								A blog application that lets users create, view, edit and delete i.e., supports CRUD operations for blog posts. 
+							Supports multiple users and implements both local and Google OAuth v2.0 authentication strategies using Passport middleware. Incorporates session cookies. </p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<a href="https://github.com/rhemaMarneni/Galactic-Journal-Blog-Application-" target="_blank" rel="noopener noreferrer"><button
+											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
+											Project</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col"> <!--News Website-->
+					<div class="card shadow-sm">
+						<img src="./Images/news_website.png" alt="galaticjournal" height="180px"
+							style="border-radius: 5px;">
+						<div class="card-body">
+							<p class="card-text"><strong>News Website</strong><br> <em>NodeJS | Express | HTML/SCSS | NewsAPI</em><br>
+								A dynamic news website implemented utilizing an external API "NewsAPI" to fetch daily headlines and news across various categories. 
+								Node.js and Express are utilized in the backend to seamlessly integrate with the API, with robust REST API endpoints, that respond to HTTP requests </p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<a href="https://github.com/rhemaMarneni/News-Website" target="_blank" rel="noopener noreferrer"><button
+											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
+											Project</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col"> <!--ElectriXchange-->
+					<div class="card shadow-sm">
+						<img src="./Images/electrixchange.jpg" alt="electrixchange" height="180px"
+							style="border-radius: 5px;">
+						<div class="card-body">
+							<p class="card-text"><strong>ElectriXchange</strong><br> <em> Java | JDBC | HTML/JSP |
+									MySQL</em><br>An online e-commerce auction site for three categories of electronics
+								items - Phones, Laptops and Desktops. Allows users to create auctions and participate in
+								manual and auto-bidding over the listed items. Covers three user bases: Admin, Customer
+								Representatives, End-users.</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<a href="https://github.com/rhemaMarneni/ElectriXchange-Online-Auction-Website" target="_blank" rel="noopener noreferrer"><button
+											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
+											Project</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col"> <!--MyBookPal-->
+					<div class="card shadow-sm">
+						<img src="./Images/mybookpal.png" alt="mybookpal" height="180px"
+							style="border-radius: 8px;">
+						<div class="card-body">
+							<p class="card-text"><strong>MyBookPal</strong><br> <em>HTML | CSS | JS | Node.js |
+									MySQL</em><br>
+									An online bookstore facilitates seamless purchasing, borrowing, and auction participation. 
+									Utilizing robust REST APIs, it supports inventory management, sales tracking, 
+									and customer relationships. Designed for administrators, customer representatives, and end-users, 
+									it provides a comprehensive online book solution.</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<a href="https://github.com/rhemaMarneni/MyBookPal-An-Online-Bookstore/" target="_blank" rel="noopener noreferrer"><button
+											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
+											Project</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col"> <!--OSN Mood tracking-->
+					<div class="card shadow-sm">
+						<img src="./Images/moodtracker.png" alt="moodtracker" height="168px"
+							style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+						<div class="card-body">
+							<p class="card-text"><strong>Social Media Mood Tracking System</strong><br>
+								<em>Figma</em><br>Understanding the psychological influences of Online Social Networks
+								(OSNs) and the research Gap in Mood Tracking Systems to propose an OSN Mood Tracking
+								System. The features are based on past research on some HCI considerations.
+							</p>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group">
+									<a
+										href="https://www.figma.com/proto/tLoN3Ru9A0NROmoMM9W8o6/SM-Mood-Tracker-Prototype?node-id=2-2&starting-point-node-id=13%3A1388&scaling=scale-down" target="_blank" rel="noopener noreferrer"><button
+											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
+											Project</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h3 class="py-3">Massive Data Storage and Retrieval</h3>
 			<div class="highlight">
 					<!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 highlight-project"> -->
 						<!-- <div class="col" > PageSageXpert -->
@@ -142,7 +253,7 @@
 										subgraph of search results using 3D Force Directed Layout.</p>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="btn-group">
-											<a href="https://github.com/rhemaMarneni/PageSageXpert"><button type="button"
+											<a href="https://github.com/rhemaMarneni/PageSageXpert" target="_blank" rel="noopener noreferrer"><button type="button"
 													class="btn btn-sm btn-outline-secondary viewproject">View
 													Project</button></a>
 										</div>
@@ -153,7 +264,7 @@
 					<!-- </div> -->
 					<div class="highlight-text">
 						<h5 style="color: #fff;">Computed the pageRank of 5.3 million articles using Distributed Processing</h5>
-						<h5 class="highlight-title">"Exceptional Project Award" ~Rutgers CS Department</h5>
+						<h5 class="highlight-title">🥇"Outstanding Project Award" ~Rutgers CS Department</h5>
 						<div class="faq-container">
 							<div class="faq active">
 							  <h4 class="faq-title">
@@ -191,108 +302,6 @@
 						<p style="color:#fff;">To check the visualization of entire Wikidata dataset as a Graph City (51million vertices, 131 million edges) checkout this <a href="https://www.youtube.com/watch?v=azRk8F7-KRE" style="color:rgb(106, 192, 237)">YouTube Link</a>!</p>
 					</div>
 			</div>
-			<h3 class="py-3">Full Stack Development and UI/UX</h3>
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 project-boxes">
-				<div class="col"> <!--News Website-->
-					<div class="card shadow-sm">
-						<img src="./Images/news_website.png" alt="galaticjournal" height="180px"
-							style="border-radius: 5px;">
-						<div class="card-body">
-							<p class="card-text"><strong>News Website</strong><br> <em>NodeJS | Express | EJS | SCSS</em><br>
-								A dynamic news website implemented utilizing an external API to fetch daily headlines and news across various categories. 
-								Node.js and Express are utilized in the backend to seamlessly integrate with the API, with robust REST API endpoints, that respond to HTTP requests </p>
-							<div class="d-flex justify-content-between align-items-center">
-								<div class="btn-group">
-									<a href="https://github.com/rhemaMarneni/News-Website"><button
-											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
-											Project</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col"> <!--Galactic Journal-->
-					<div class="card shadow-sm">
-						<img src="./Images/Galactic Journal.png" alt="galaticjournal" height="180px"
-							style="border-radius: 5px;">
-						<div class="card-body">
-							<p class="card-text"><strong>Galactic Journal: Online Blog Application</strong><br> <em>NodeJS | Express | EJS | HTML/CSS</em><br>
-								Galactic Journal is a blog application that lets users create, view, edit and delete them. 
-									This application is built using Node.js, Express.js and EJS. It is currently a non-persistent application, 
-									that is, all posts disappear after each session (since it does not have a database).</p>
-							<div class="d-flex justify-content-between align-items-center">
-								<div class="btn-group">
-									<a href="https://github.com/rhemaMarneni/Galactic-Journal-Blog-Application-"><button
-											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
-											Project</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col"> <!--ElectriXchange-->
-					<div class="card shadow-sm">
-						<img src="./Images/electrixchange.jpg" alt="electrixchange" height="180px"
-							style="border-radius: 5px;">
-						<div class="card-body">
-							<p class="card-text"><strong>ElectriXchange</strong><br> <em> JSP | JDBC |
-									MySQL</em><br>An online e-commerce auction site for three categories of electronics
-								items - Phones, Laptops and Desktops. Allows users to create auctions and participate in
-								manual and auto-bidding over the listed items. Covers three user bases: Admin, Customer
-								Representatives, End-users.</p>
-							<div class="d-flex justify-content-between align-items-center">
-								<div class="btn-group">
-									<a href="https://github.com/rhemaMarneni/ElectriXchange-Online-Auction-Website"><button
-											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
-											Project</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col"> <!--MyBookPal-->
-					<div class="card shadow-sm">
-						<img src="./Images/mybookpal.png" alt="mybookpal" height="180px"
-							style="border-radius: 8px;">
-						<div class="card-body">
-							<p class="card-text"><strong>MyBookPal</strong><br> <em>HTML | CSS | JS | Node.js |
-									MySQL</em><br>
-									An online bookstore facilitates seamless purchasing, borrowing, and auction participation. 
-									Utilizing robust REST APIs, it supports inventory management, sales tracking, 
-									and customer relationships. Designed for administrators, customer representatives, and end-users, 
-									it provides a comprehensive online book solution.</p>
-							<div class="d-flex justify-content-between align-items-center">
-								<div class="btn-group">
-									<a href="https://github.com/rhemaMarneni/ElectriXchange-Online-Auction-Website"><button
-											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
-											Project</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col"> <!--OSN Mood tracking-->
-					<div class="card shadow-sm">
-						<img src="./Images/moodtracker.png" alt="moodtracker" height="168px"
-							style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
-						<div class="card-body">
-							<p class="card-text"><strong>Social Media Mood Tracking System</strong><br>
-								<em>Figma</em><br>Understanding the psychological influences of Online Social Networks
-								(OSNs) and the research Gap in Mood Tracking Systems to propose an OSN Mood Tracking
-								System. The features are based on past research on some HCI considerations.
-							</p>
-							<div class="d-flex justify-content-between align-items-center">
-								<div class="btn-group">
-									<a
-										href="https://www.figma.com/proto/tLoN3Ru9A0NROmoMM9W8o6/SM-Mood-Tracker-Prototype?node-id=2-2&starting-point-node-id=13%3A1388&scaling=scale-down"><button
-											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
-											Project</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 			<h3 class="py-3">Linux and OS</h3>
 			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 project-boxes">
 				<div class="col"> <!--UThreads-->
@@ -306,7 +315,7 @@
 								and Multilevel Feedback Queues. </p>
 							<div class="d-flex justify-content-between align-items-center">
 								<div class="btn-group">
-									<a href="https://github.com/rhemaMarneni/UThreads-User-defined-Thread-Library-in-C"><button
+									<a href="https://github.com/rhemaMarneni/UThreads-User-defined-Thread-Library-in-C" target="_blank" rel="noopener noreferrer"><button
 											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
 											Project</button></a>
 								</div>
@@ -327,7 +336,7 @@
 							<div class="d-flex justify-content-between align-items-center">
 								<div class="btn-group">
 									<a
-										href="https://github.com/rhemaMarneni/UMalloc-User-defined-malloc-implementation-in-C"><button
+										href="https://github.com/rhemaMarneni/UMalloc-User-defined-malloc-implementation-in-C" target="_blank" rel="noopener noreferrer"><button
 											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
 											Project</button></a>
 								</div>
@@ -353,7 +362,7 @@
 							<div class="d-flex justify-content-between align-items-center">
 								<div class="btn-group">
 									<a
-										href="https://github.com/rhemaMarneni/Optimization-Momentum-Methods-and-Descent-Directions"><button
+										href="https://github.com/rhemaMarneni/Optimization-Momentum-Methods-and-Descent-Directions" target="_blank" rel="noopener noreferrer"><button
 											type="button" class="btn btn-sm btn-outline-secondary viewproject">View
 											Project</button></a>
 								</div>
@@ -374,7 +383,7 @@
 							</p>
 							<div class="d-flex justify-content-between align-items-center">
 								<div class="btn-group">
-									<a href="https://github.com/rhemaMarneni/Visualization-and-Analysis-of-Depressed-Users-using-Social-Network-Analysis-Tool/"><button type="button"
+									<a href="https://github.com/rhemaMarneni/Visualization-and-Analysis-of-Depressed-Users-using-Social-Network-Analysis-Tool/" target="_blank" rel="noopener noreferrer"><button type="button"
 											class="btn btn-sm btn-outline-secondary viewproject">View
 											Project</button></a>
 								</div>
@@ -383,45 +392,6 @@
 					</div>
 				</div>
 			</div>
-			
-			<!--
-			<h3 class="py-3">Some funny stuff</h3>
-			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 project-boxes">
-				<div class="col"> Lucky 7--><!--
-					<div class="card shadow-sm" style="height: 300px;">
-						<img src="./Images/lucky7.jpg" alt="lucky7" height="165px"
-							style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
-						<div class="card-body">
-							<p class="card-text"><strong>Lucky 7 Dice Game</strong><br> <em>HTML | CSS | JS</em><br>
-							</p>
-							<div class="d-flex justify-content-between align-items-center">
-								<div class="btn-group">
-									<a href="https://rhemamarneni.github.io/Lucky7-Dice-Game/"><button type="button"
-											class="btn btn-sm btn-outline-secondary viewproject">View
-											Project</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col"> Simon Game--><!--
-					<div class="card shadow-sm" style="height: 300px;">
-						<img src="./Images/simongame.png" alt="lucky7" height="165px"
-							style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
-						<div class="card-body">
-							<p class="card-text"><strong>Simon Game</strong><br> <em>HTML | CSS | JS</em><br>
-							</p>
-							<div class="d-flex justify-content-between align-items-center">
-								<div class="btn-group">
-									<a href="https://rhemamarneni.github.io/The-Simon-Game/"><button type="button"
-											class="btn btn-sm btn-outline-secondary viewproject">View
-											Project</button></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>-->
 		</div>
 	</div>
 	<!-- CONTACT -->
@@ -440,10 +410,10 @@
 
 			<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
 				<p class="col-md-4 mb-0 text-white-50">©2024 Rhema Marneni</p>
-				<ul class="nav col-md-4 justify-content-end">
+				<!-- <ul class="nav col-md-4 justify-content-end">
 					<li class="nav-item"><a href="#about" class="nav-link px-2 text-white">About</a></li>
 					<li class="nav-item"><a href="#skills" class="nav-link px-2 text-white">Skills</a></li>
-					<li class="nav-item"><a href="#projects" class="nav-link px-2 text-white">Projects</a></li>
+					<li class="nav-item"><a href="#projects" class="nav-link px-2 text-white">Projects</a></li> -->
 				</ul>
 			</footer>
 		</div>
