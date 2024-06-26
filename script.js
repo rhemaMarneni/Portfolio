@@ -1,7 +1,17 @@
-const toggleBtns = document.querySelectorAll(".faq-toggle");
+$(document).ready(function() {
+  $(".faq-toggle").click(function() {
+      var $faq = $(this).closest(".faq");
+      var $allFaqs = $(".faq");
+      var currentIndex = $allFaqs.index($faq);
 
-toggleBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    btn.parentNode.classList.toggle("active");
+      $faq.toggleClass("active");
+
+      $allFaqs.not($faq).removeClass("active");
+
+      var $nextFaq = $allFaqs.eq(currentIndex + 1);
+      if (!$nextFaq.length) {
+          $nextFaq = $allFaqs.first(); 
+      }
+      $nextFaq.addClass("active");
   });
 });
