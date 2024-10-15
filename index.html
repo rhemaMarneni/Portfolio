@@ -121,9 +121,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p class="aboutme py-5 m-5">I am a <b>Software Engineer</b> and a <b>Computer Science</b> graduate from <b>Rutgers</b>. 
-          My experience spans diverse projects, including the creation of news websites, blog platforms, and e-commerce sites 
-          with robust <b>REST API development</b> using JavaScript full-stack (<b>PERN</b>). 
+        <p class="aboutme py-5 m-5">I am a <b>Software Engineer</b> and a <b>Computer Science</b> graduate from <b>Rutgers University</b>.
+          My experience spans diverse projects, including <b>full-stack, UI/UX, Data</b> and <b>AI/ML</b>, with robust <b>REST API development</b>.
           I am a data enthusiast with a background in <b>distributed processing</b> and an aficionado of <b>Discrete Mathematics</b>.
           </p>
       </div><!-- End Section Title -->
@@ -149,10 +148,10 @@
               <b>Programming: </b>JavaScript, TypeScript, Python, SparkSQL, Java/J2EE, C, HTML, CSS, SCSS</li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              <b>Databases: </b>MySQL, PostgreSQL, MongoDB</li>
+              <b>Databases: </b>MySQL, PostgreSQL, SQLite, Firebase, MongoDB</li>
             <li>
               <i class="fa-li fa fa-check"></i>
-              <b>Libraries & Frameworks: </b>Node, Express, React, jQuery, Passport, Jasmine, Django, Pytorch, Tensorflow, Numpy, Pandas</li>
+              <b>Libraries & Frameworks: </b>Node, Express, React, Next, jQuery, Passport, Jasmine, Django, Pytorch, Tensorflow, Numpy, Pandas</li>
             </ul>
         </div>
         <div class="row skills-content skills-animation my-4">
@@ -160,7 +159,7 @@
           <ul class="fa-ul mb-0 tech-skills">
             <li>
               <i class="fa-li fa fa-check"></i>
-              Azure, REST, OAuth, HTTP, Spark, Hadoop, Linux/Unix, Git, GitHub CI/CD, Postman, Visual Studio </li>
+              Azure, REST, OAuth, HTTP, NPM, Spark, Hadoop, Linux/Unix, Git, GitHub CI/CD, Postman, Visual Studio, Vercel </li>
           </ul>
         </div>
         <div class="row skills-content skills-animation my-4">
@@ -203,7 +202,7 @@
                     style="border-radius: 5px;">
                   <div class="card-body">
                     <p class="card-text"><strong>Galactic Journal: Online Blog Application</strong><br> <em>NodeJS | Express | PostgreSQL | HTML/SCSS</em><br>
-                      A blog application that lets users create, view, edit and delete i.e., supports CRUD operations for blog posts. 
+                      A blog application that lets users create, view, edit and delete i.e., supports CRUD operations for blog posts.
                     Supports multiple users and implements both local and Google OAuth v2.0 authentication strategies using Passport middleware. Incorporates session cookies. </p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
@@ -472,6 +471,73 @@
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
+            <!--  Portfolio Item 13 Domain Shopping cart-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux">
+              <div class="col"> <!--Twitter SNA-->
+                <div class="card shadow-sm">
+                  <img src="./assets/img/portfolio/shopping cart.png" alt="ShoppingCart" height="160px"
+                    style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                  <div class="card-body">
+                    <p class="card-text"><strong>Shopping Cart for Web Domains</strong><br> <em>React | Next | TypeScript | Chakra UI | Vercel</em><br>
+                      React Frontend shopping cart component to buy web domains, with input validation, availability checking, using a Mock API, 
+                      CRUD operations, and cart optimization. Uses Chakra UI for component rendering.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://web-domains-shopping-cart.vercel.app/" target="_blank" rel="noopener noreferrer"><button type="button"
+                            class="btn btn-sm btn-outline-secondary viewproject">View
+                            Project</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <!--  Portfolio Item 14 processing pipeline-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-data">
+              <div class="col"> <!--processing pipeline-->
+                <div class="card shadow-sm">
+                  <img src="./assets/img/portfolio/processing pipeline.png" alt="processingPipeline" height="160px"
+                    style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                  <div class="card-body">
+                    <p class="card-text"><strong>CSV to SQLite Processing Pipeline</strong><br> <em>TypeScript | Node | Streams | knex</em><br>
+                      A data downloading and processing pipeline to download CSV files and add them to SQLite Database.
+                      Downloads a large .tar.gz file, containing lists of organizations and customers, decompresses and unzips the CSVs within, 
+                      parses them, and add them to a SQLite database.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://github.com/rhemaMarneni/CSV-to-SQLite-Processing-Pipeline" target="_blank" rel="noopener noreferrer"><button type="button"
+                            class="btn btn-sm btn-outline-secondary viewproject">View
+                            Project</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <!--  Portfolio Item 15 processing pipeline-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-data">
+              <div class="col"> <!--processing pipeline-->
+                <div class="card shadow-sm">
+                  <img src="./assets/img/portfolio/scrapingHTMLtoJSON.png" alt="processingPipeline" height="160px"
+                    style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                  <div class="card-body">
+                    <p class="card-text"><strong>Scraping Web Pages: HTML to JSON</strong><br> <em>TypeScript | Node | Crawlee | Cheerio</em><br>
+                      A web scraping tool: crawls a given list of Y Combinator ("YC") company urls, scrapes HTML data on their public pages into pre-defined fields in TS interfaces, 
+                      and extracts structured data about each into a JSON file. Uses NPM libraries Cheerio and Crawlee.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://github.com/rhemaMarneni/Scraping-Web-Pages-HTML-to-JSON" target="_blank" rel="noopener noreferrer"><button type="button"
+                            class="btn btn-sm btn-outline-secondary viewproject">View
+                            Project</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
           </div><!-- End Portfolio Container -->
           <!-- <div class="show-more">
             <a href="#" id="show-more-btn">Show more</a>
@@ -523,10 +589,29 @@
               <h5>1st Place: SPRINT SRIX Challenge - "Smart Helmets using Arduino UNO"</h5>
             </div><!-- End Resume Item -->
 
+            <h3 class="resume-title">Certifications</h3>
+            <div class="resume-item pb-0">
+              <h5>AZ900: Microsoft Azure Fundamentals</h5>
+              <h5>Prompt Engineering for ChatGPt by <em>Vanderbilt University</em></h5>
+              <h5>CCNAv7 Introduction to Networks by <em>Cisco</em></h5>
+              <h5>Agile with Atlassian JIRA by <em>Atlassian</em></h5>
+            </div><!-- End Resume Item -->
+
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item pb-0">
+              <h4>Research Assistant - Distributed Computing</h4>
+              <h5>Rutgers University - New Brunswick</h5>
+              <p><em>Sep 2023 - Dec 2023</em></p>
+              <ul>
+                <li>Spearheaded a distributed computing research project, designing a PageRank algorithm for 5.3 million Wikipedia pages using Apache Spark,
+                  achieving 100% accuracy through optimized computations.</li>
+                <li>Developed a search engine prototype with text summarization and visualized large-scale datasets,
+                  leading to the Outstanding Project Award from the CS Department.</li>
+              </ul>
+            </div><!-- End Resume Item -->
             <div class="resume-item pb-0">
               <h4>Programmer Analyst Intern</h4>
               <h5>Cognizant Technology Solutions</h5>
@@ -540,17 +625,13 @@
             <div class="resume-item pb-0">
               <h4>Graduate Teaching Assistant</h4>
               <h5>Rutgers University - New Brunswick </h5>
-              <p><em>Jan 2024 - May 2024</em></p>
+              <p><em>Sep 2023 - May 2024</em></p>
               <ul class="mb-0">
                 <li class="mb-0">CS 205: Intro to Discrete Structures I</li>
+                <li class="mb-0">Conducting in-person recitations for topics in Discrete Mathematics: Turing Machines, Program Correctness, Mathematical Induction,
+                  Propositional Logic, Finite State Machines etc</li>
+                <li class="mb-0">Facilitating intellectual discussions while indulging in logical thinking and problem-solving approaches</li>
               </ul>
-            </div><!-- End Resume Item -->
-        
-            <h3 class="resume-title">Certifications</h3>
-            <div class="resume-item pb-0">
-              <h5>AZ900: Microsoft Azure Fundamentals</h5>
-              <h5>Prompt Engineering for ChatGPt by <em>Vanderbilt University</em></h5>
-              <h5>CCNAv7 Introduction to Networks by <em>Cisco</em></h5>
             </div><!-- End Resume Item -->
           </div>
 
@@ -566,9 +647,9 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Interests</h2>
-        <h4 class="interests-text">I love playing the keys 🎹 and have been a <b>musician for <span id="musicExp"></span> years</b>. I am a professionally <b>certified Keyboardist</b> till <b>Grade 8</b> from <b>Trinity College London</b>. I am amateur guitarist too.
+        <h4 class="interests-text">I love playing the keys 🎹 and have been a <b>musician for <span id="musicExp"></span> years</b>. I am a professionally <b>certified Keyboardist</b> till <b>Grade 8</b> from <b>Trinity College London</b>. I am an amateur guitarist too.
         </h4>
-        <h4 class="interests-text"><b>Mentoring</b> and <b>teaching</b> is one of my strongest suits. I've introduced 50+ high school students to web development and mentored 40+ college students as a Teaching Assistant at Rutgers.
+        <h4 class="interests-text"><b>Mentoring</b> and <b>teaching</b> are some of my strongest suits. I've introduced <b>50+ high school students</b> to web development and mentored <b>200+ college students</b> as a Teaching Assistant at Rutgers.
         </h4>
       </div><!-- End Section Title -->
 
