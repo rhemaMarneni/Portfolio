@@ -956,7 +956,7 @@
   /*--------------------------------------------------------------
   # Contact Section
   --------------------------------------------------------------*/
-  .contact{
+  .contact {
 	background-color: var(--surface-color);
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 	padding: 0px;
@@ -1012,7 +1012,7 @@
 	  font-family: Tahoma, "Trebuchet MS", sans-serif;
 	  font-size: large;
 	  display: grid;
-	  grid-template-columns: 3fr 1fr;
+	  grid-template-columns: 4fr 1fr;
   }
   
   .right{
