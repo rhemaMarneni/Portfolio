@@ -618,7 +618,33 @@
 	  --bs-btn-disabled-bg: #4a4a4a;
 	  --bs-btn-disabled-border-color: #4a4a4a;
   }
-  
+
+  /* button effects credits to https://codepen.io/giana/pen/BZaGyP */
+  .pulse {
+	background: none;
+	border: 2px solid;
+	border-radius: 10px;
+	font-family: "Noto Serif", serif;
+	font-optical-sizing: auto;
+	font: 15px;
+	line-height: 1;
+	margin: 0.5em;
+	padding: 1em 2em;
+	color: #ef6eae;
+	transition: 0.25s;
+  }
+  .pulse:hover,
+	.pulse:focus {
+	animation: pulse 1s;
+	box-shadow: 0 0 0 2em transparent;
+	border-color: #FFE5B4;
+	color: #fff;
+	}
+
+	@keyframes pulse {
+	0% { box-shadow: 0 0 0 0 #FFE5B4; }
+	}
+
   @media (max-width: 768px) {
 	.hero h2 {
 	  font-size: 32px;
