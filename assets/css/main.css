@@ -654,9 +654,9 @@
 	color: #fff;
 	}
 
-	@keyframes pulse {
+	/* @keyframes pulse {
 	0% { box-shadow: 0 0 0 0 #FFE5B4; }
-	}
+	} */
 
   @media (max-width: 768px) {
 	.hero h2 {
