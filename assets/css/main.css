@@ -605,7 +605,7 @@
 	  --bs-btn-active-bg: #0077b5;
 	  --bs-btn-active-border-color: #2484b7;
 	  --bs-btn-disabled-bg: #0077b5;
-	  --bs-btn-disabled-border-color: ##0077b5;
+	  --bs-btn-disabled-border-color: #0077b5;
   }
   
   .codepen {
@@ -618,6 +618,19 @@
 	  --bs-btn-disabled-bg: #4a4a4a;
 	  --bs-btn-disabled-border-color: #4a4a4a;
   }
+
+  .medium {
+    --bs-btn-bg: #f2f0e9;
+    --bs-btn-border-color: #f2f0e9;
+    --bs-btn-color: #242424;
+    --bs-btn-hover-bg: #d8d5cc;
+    --bs-btn-hover-border-color: #d8d5cc;
+    --bs-btn-hover-color: #242424;
+    --bs-btn-active-bg: #c8c5bc;
+    --bs-btn-active-border-color: #c8c5bc;
+    --bs-btn-disabled-bg: #f2f0e9;
+    --bs-btn-disabled-border-color: #f2f0e9;
+}
 
   /* button effects credits to https://codepen.io/giana/pen/BZaGyP */
   .pulse {
